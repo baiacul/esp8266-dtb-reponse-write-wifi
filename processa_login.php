@@ -26,7 +26,7 @@ if ($result->num_rows == 1) {
     $_SESSION['id_user'] = $row['Id_user']; //session variable to authenticate with esp
 
     // redirect to preview page
-    header("Location: pagina_protegida.php");
+    header("Location: preview_page.php");
 } else {
     // Invalid credentials, redirect back to login page
     header("Location: login.html");
